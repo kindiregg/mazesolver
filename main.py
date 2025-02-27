@@ -5,11 +5,12 @@ import sys
 
 def main():
     if __name__ == "__main__":
-        num_rows = 26
-        num_cols = 30
+        num_rows = 80
+        num_cols = 100
+        # any more than this and it kinda takes forever and/or hits the recursion limit
         margin = 50
-        screen_x = 800
-        screen_y = 600
+        screen_x = 1920 
+        screen_y = 1080 #800 x 600 was the normal window but I have a 1440p monitor
         cell_size_x = (screen_x - 2 * margin) / num_cols
         cell_size_y = (screen_y - 2 * margin) / num_rows
 
